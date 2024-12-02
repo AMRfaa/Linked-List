@@ -1,26 +1,3 @@
-#stok_harga = []
-#
-#stok_harga.append(298)
-#stok_harga.append(305)
-#stok_harga.append(320)
-#stok_harga.append(301)
-#stok_harga.append(292)
-#
-#stok_harga.insert(1,284)
-#
-#print(stok_harga)#
-
-#class node :
-#    def __init__( self, newdata, link):
-#        self.data = newdata
-#        self.next = link
-#    def display(self):
-#        curnode = self.head
-#        while curnode is not None:
-#            print (curnode.data, end="->") 
-#            curnode = curnode.next
-#        print("none")
-
 def buat_node(data):
     return {'data': data, 'next': None}
 
