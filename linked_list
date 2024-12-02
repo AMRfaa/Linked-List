@@ -1,0 +1,28 @@
+def create_node(data):
+    return {'data': data, 'next': None}
+
+def append(head, data):
+    new_node = create_node(data)
+    if head is None:
+        return new_node
+    last_node = head
+    while last_node['next']:
+        last_node = last_node['next']
+    last_node['next'] = new_node
+    return head
+
+def print_list(head):
+    current_node = head
+    while current_node:
+        print(current_node['data'], end=" -> ")
+        current_node = current_node['next']
+    print("None")
+
+if __name__ == "__main__":
+    head = None
+    head = append(head, 0)
+    head = append(head, 9)
+    head = append(head, 5)
+
+    print("Linked List:")
+    print_list(head)
